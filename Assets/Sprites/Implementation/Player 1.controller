@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d67b88cd83fef4bb42c01a0f99a738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location: dragon_flap
+  location: 
 --- !u!1101 &1101026918401876734
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

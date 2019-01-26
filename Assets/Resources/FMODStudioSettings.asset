@@ -32,7 +32,7 @@ MonoBehaviour:
     Value: 0
   LiveUpdateSettings:
   - Platform: 1
-    Value: 1
+    Value: 0
   - Platform: 2
     Value: 0
   OverlaySettings:
@@ -47,7 +47,7 @@ MonoBehaviour:
     Value: 0
   BankDirectorySettings:
   - Platform: 2
-    Value: 
+    Value: Assets
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
