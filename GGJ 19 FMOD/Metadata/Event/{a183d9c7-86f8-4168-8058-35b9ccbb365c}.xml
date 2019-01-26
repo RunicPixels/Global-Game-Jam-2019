@@ -119,6 +119,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{e7fcd62e-ceff-42d1-a547-98f695c60384}">
+        <property name="volume">
+            <value>5.5</value>
+        </property>
         <property name="name">
             <value>Dragon_Flap</value>
         </property>
@@ -151,6 +154,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{fb29568d-ff94-48b4-8520-5ccfd992e740}">
+        <property name="volume">
+            <value>5</value>
+        </property>
         <property name="name">
             <value>Dragon_Voice</value>
         </property>
@@ -167,6 +173,7 @@
     <object class="MixerBusEffectChain" id="{d6ecf970-e708-44a7-a91f-6d9a79eb2517}">
         <relationship name="effects">
             <destination>{4b98dfed-dcca-443e-ad75-ccf382e10e8c}</destination>
+            <destination>{ee764cb7-48e1-4e80-bfc6-564fd93119fe}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{f7f4ab61-2760-4441-929b-e77076de4ab9}"/>
@@ -274,6 +281,7 @@
     </object>
     <object class="MixerBusPanner" id="{54fa5285-ff51-4b74-9c6d-0f147acf3b5a}"/>
     <object class="MixerBusFader" id="{4b98dfed-dcca-443e-ad75-ccf382e10e8c}"/>
+    <object class="LoudnessMeter" id="{ee764cb7-48e1-4e80-bfc6-564fd93119fe}"/>
     <object class="MixerBusFader" id="{d91a22ef-3cbb-4668-a0f2-7a75ec83941d}"/>
     <object class="MixerBusFader" id="{9ee7679b-c83b-4eaf-ae94-38dc9db3e3c7}"/>
 </objects>
