@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
 
 
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f && Mathf.Abs(rigidBody.velocity.x) < maxSpeed) {
+            animyeetor.SetBool("Moving", true);
             float switchBoost = 1f;
             sprite.flipX = rigidBody.velocity.x < 0;
             if (rigidBody.velocity.x * Input.GetAxis("Horizontal") < 0) {
@@ -58,6 +59,7 @@ public class Player : MonoBehaviour
             rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -maxSpeed + 0.3f, maxSpeed - 0.3f), rigidBody.velocity.y);
         }
         else if (IsGrounded()) {
+            animyeetor.SetBool("Moving", false);
             rigidBody.velocity = new Vector2(rigidBody.velocity.x - rigidBody.velocity.x % 1f, rigidBody.velocity.y);
         }
 
@@ -85,6 +87,12 @@ public class Player : MonoBehaviour
         return Physics2D.Raycast(transform.position, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.2f);
     }
 
+
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if(IsGrounded()) {
+            animyeetor.SetTrigger("Land");
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.tag == "Killer") {
             transform.position = respawnPoint.position;
