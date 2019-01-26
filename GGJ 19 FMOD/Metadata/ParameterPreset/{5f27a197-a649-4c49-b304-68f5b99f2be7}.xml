@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{5f27a197-a649-4c49-b304-68f5b99f2be7}">
+        <property name="name">
+            <value>Flying</value>
+        </property>
+        <relationship name="folder">
+            <destination>{829eee25-9729-4f1c-a785-1b1be8423f4a}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{7e4aedc6-7512-4275-87f8-ae8533d40253}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{7e4aedc6-7512-4275-87f8-ae8533d40253}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
