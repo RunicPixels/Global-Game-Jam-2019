@@ -18,12 +18,31 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 114139066529690404}
   - {fileID: 114645561081580108}
+  - {fileID: 114335347505528542}
+  - {fileID: 114744217811137924}
+  - {fileID: 114180411973706180}
   MasterBanks:
   - {fileID: 114262989729434362}
   StringsBanks:
   - {fileID: 114102719595434326}
-  stringsBankWriteTime: 636841218086228237
+  stringsBankWriteTime: 636841402931694311
   cacheVersion: 3
+--- !u!114 &114040367927401452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Flying
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114073587567706508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,11 +76,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: GGJ 19 FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636841218086228237
+  lastModified: 636841402931694311
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 774
+    Value: 902
   Exists: 1
 --- !u!114 &114139066529690404
 MonoBehaviour:
@@ -86,6 +105,45 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 10000
+--- !u!114 &114170925097948610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Flying
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114180411973706180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Pickup_Feather
+  guid: 73e75c11e788924ead352be2a0f7c947
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3565
 --- !u!114 &114195356976166152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,12 +178,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 636841218086178269
+  lastModified: 636841402931604362
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1476896
+    Value: 1792352
   Exists: 1
+--- !u!114 &114335347505528542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Dragon_Glide
+  guid: 9a56d9a99fc67c40972f67434f3b3de6
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114170925097948610}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9500
 --- !u!114 &114645561081580108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,8 +226,31 @@ MonoBehaviour:
   - {fileID: 114262989729434362}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 87140
+  Length: 84140
+--- !u!114 &114744217811137924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Dragon_Jump
+  guid: e2a7f2df1c8a754990fafab515861002
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
