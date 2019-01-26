@@ -10,7 +10,7 @@ public class FMODAudio : StateMachineBehaviour
     FMOD.Studio.EventInstance dragonFlap;
 
     public void Awake() {
-        dragonFlap = FMODUnity.RuntimeManager.CreateInstance("event:" + location);
+        dragonFlap = FMODUnity.RuntimeManager.CreateInstance("event:/Dragon_Flap");
     }
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex) {
