@@ -12,9 +12,291 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  EditorBanks:
+  - {fileID: 114546933443713000}
+  - {fileID: 114415165241582904}
+  - {fileID: 114955403097822998}
+  - {fileID: 114176700129184544}
+  EditorEvents:
+  - {fileID: 114501476071021756}
+  - {fileID: 114498619749944204}
+  MasterBanks:
+  - {fileID: 114176700129184544}
+  StringsBanks:
+  - {fileID: 114546933443713000}
+  stringsBankWriteTime: 636841207100000000
   cacheVersion: 3
+--- !u!114 &114176700129184544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\Assets\FMOD\GGJ 2019
+    FMOD\Build\Master Bank.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Build
+    Value: 18604
+  Exists: 1
+--- !u!114 &114198293452799092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\Assets\FMOD\GGJ 2019
+    FMOD\Build\Master Bank.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Build
+    Value: 18604
+  Exists: 1
+--- !u!114 &114415165241582904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\Assets\FMOD\GGJ 2019
+    FMOD\Build\Master Bank.streams.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Build
+    Value: 1005088
+  Exists: 1
+--- !u!114 &114469368374715210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menu_Music
+  guid: d4d00401b3d8b44da14bd8c4de577289
+  Banks:
+  - {fileID: 114198293452799092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 87140
+--- !u!114 &114498619749944204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menu_Music
+  guid: d4d00401b3d8b44da14bd8c4de577289
+  Banks:
+  - {fileID: 114176700129184544}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 87140
+--- !u!114 &114501476071021756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Dragon_Flap
+  guid: c7d983a1f8866841805835b9ccbb365c
+  Banks:
+  - {fileID: 114176700129184544}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
+--- !u!114 &114546933443713000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\FMOD\GGJ 2019 FMOD\Build\Master Bank.strings.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 870
+  - Name: 
+    Value: 870
+  - Name: Assets
+    Value: 870
+  - Name: Banks
+    Value: 870
+  - Name: Build
+    Value: 870
+  - Name: Metadata
+    Value: 870
+  - Name: Plugins
+    Value: 870
+  Exists: 1
+--- !u!114 &114573792053820176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Dragon_Flap
+  guid: c7d983a1f8866841805835b9ccbb365c
+  Banks:
+  - {fileID: 114198293452799092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
+--- !u!114 &114761170079829004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\Assets\FMOD\GGJ 2019
+    FMOD\Build\Master Bank.streams.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Build
+    Value: 1005088
+  Exists: 1
+--- !u!114 &114935235874068606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\FMOD\GGJ 2019 FMOD\Build\Master Bank.strings.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 870
+  - Name: 
+    Value: 870
+  - Name: Assets
+    Value: 870
+  - Name: Banks
+    Value: 870
+  - Name: Build
+    Value: 870
+  - Name: Metadata
+    Value: 870
+  - Name: Plugins
+    Value: 870
+  Exists: 1
+--- !u!114 &114955403097822998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\Assets\FMOD\GGJ 2019
+    FMOD\Build\Master Bank.assets.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Build
+    Value: 454240
+  Exists: 1
+--- !u!114 &114985764168830498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\Assets\FMOD\GGJ 2019
+    FMOD\Build\Master Bank.assets.bank
+  lastModified: 636841207100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Build
+    Value: 454240
+  Exists: 1
