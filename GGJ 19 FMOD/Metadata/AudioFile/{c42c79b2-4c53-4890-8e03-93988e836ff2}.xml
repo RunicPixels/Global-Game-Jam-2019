@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{c42c79b2-4c53-4890-8e03-93988e836ff2}">
+        <property name="assetPath">
+            <value>GGJ19_Dragon_Voice_09.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>1.0982499999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f9d84557-822e-4167-9292-f17da1c72339}</destination>
+        </relationship>
+    </object>
+</objects>
