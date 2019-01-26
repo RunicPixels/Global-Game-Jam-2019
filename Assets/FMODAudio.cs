@@ -6,8 +6,15 @@ using FMOD;
 public class FMODAudio : StateMachineBehaviour
 {
     public string location;
+
+    FMOD.Studio.EventInstance dragonFlap;
+
+    public void Awake() {
+        dragonFlap = FMODUnity.RuntimeManager.CreateInstance("event:" + location);
+    }
+
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex) {
-        FMODUnity.RuntimeManager.CreateInstance("event:" + location);
+        
     }
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
