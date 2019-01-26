@@ -18,12 +18,14 @@ public class PickUp : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if(other.GetComponent<Player>() == null) {
+    private void OnTriggerEnter2D(Collider2D other) {
+        //Debug.Log("Heeeeey");
+        if(other.GetComponent<Player>() != null) {
             Player player = other.GetComponent<Player>();
             if(type == PickupType.Jump) {
                 player.jumps += 1;
             }
+            gameObject.SetActive(false);
         }
     }
 }
