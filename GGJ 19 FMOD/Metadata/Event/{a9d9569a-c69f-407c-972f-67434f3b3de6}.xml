@@ -147,10 +147,10 @@
     </object>
     <object class="TransitionRegion" id="{5b8635fd-602d-49ae-9bbf-f3ed740d33b8}">
         <property name="position">
-            <value>1</value>
+            <value>0</value>
         </property>
         <property name="length">
-            <value>6</value>
+            <value>7</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{100e10f8-fd2a-4e59-ab6d-44cca53ecef5}</destination>
