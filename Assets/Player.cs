@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
 
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f && Mathf.Abs(rigidBody.velocity.x) < maxSpeed) {
             animyeetor.SetBool("Moving", true);
+            
             float switchBoost = 1f;
             sprite.flipX = rigidBody.velocity.x < 0;
             if (rigidBody.velocity.x * Input.GetAxis("Horizontal") < 0) {
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
             }
             rigidBody.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration * switchBoost, 0) * Time.deltaTime);
             rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -maxSpeed + 0.3f, maxSpeed - 0.3f), rigidBody.velocity.y);
+            animyeetor.SetFloat("Speed", Mathf.Abs(rigidBody.velocity.x) * 0.4f);
         }
         else if (IsGrounded()) {
             animyeetor.SetBool("Moving", false);

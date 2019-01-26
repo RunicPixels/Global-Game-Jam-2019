@@ -155876,7 +155876,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6601562, y: 1.5761719}
+    oldSize: {x: 1.0644531, y: 1.3027344}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -155921,8 +155921,8 @@ MonoBehaviour:
   returnSpeed: 24
   jumps: 1
   canJumpCooldown: 0.1
-  maxSpeed: 5.2
-  acceleration: 550
+  maxSpeed: 5
+  acceleration: 525
   jumpHeight: 6
   glideMultiplier: 0.89
 --- !u!114 &1971089531
@@ -155954,7 +155954,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6601562, y: 1.5761719}
+    oldSize: {x: 1.0644531, y: 1.3027344}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
