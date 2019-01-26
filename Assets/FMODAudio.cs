@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FMOD;
+using FMODUnity;
 
 public class FMODAudio : StateMachineBehaviour
 {
     public string location;
 
-    FMOD.Studio.EventInstance dragonFlap;
-
-    public void Awake() {
-        dragonFlap = FMODUnity.RuntimeManager.CreateInstance("event:/Dragon_Flap");
-    }
-
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex) {
+        RuntimeManager.PlayOneShot("event:" + location);
         
     }
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
