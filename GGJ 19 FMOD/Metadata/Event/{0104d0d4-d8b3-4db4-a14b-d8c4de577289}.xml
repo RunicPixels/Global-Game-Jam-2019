@@ -107,6 +107,9 @@
         </relationship>
     </object>
     <object class="SingleSound" id="{b7007625-3923-4d97-983a-69a0aa07f0c6}">
+        <property name="start">
+            <value>5</value>
+        </property>
         <property name="length">
             <value>84.140408163265306</value>
         </property>
@@ -150,6 +153,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{e14e273b-640e-4678-bfd8-3655131fc49e}">
+        <property name="volume">
+            <value>6</value>
+        </property>
         <property name="name">
             <value>Menu_Whoosh</value>
         </property>
