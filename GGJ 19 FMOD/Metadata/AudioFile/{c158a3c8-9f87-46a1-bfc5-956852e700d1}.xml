@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{c158a3c8-9f87-46a1-bfc5-956852e700d1}">
+        <property name="assetPath">
+            <value>GregTheDragon(GGJ)_Cue4_end_V2.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>99.853999999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f9d84557-822e-4167-9292-f17da1c72339}</destination>
+        </relationship>
+    </object>
+</objects>
