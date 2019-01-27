@@ -23,7 +23,7 @@ public class PickUp : MonoBehaviour
         if(other.GetComponent<Player>() != null) {
             Player player = other.GetComponent<Player>();
             if(type == PickupType.Jump) {
-                player.jumps += 1;
+                player.jumps = 2;
             }
             gameObject.SetActive(false);
         }
