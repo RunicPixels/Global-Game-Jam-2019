@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
 public class Bed : MonoBehaviour
 {
     public SpriteRenderer light;
@@ -36,7 +36,7 @@ public class Bed : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Player") {
-
+            if(doLight == false)RuntimeManager.PlayOneShot("event:/Bed");
             doLight = true;
             fadingOut = false;
         }

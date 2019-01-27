@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class Lamp : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class Lamp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.tag == "Player") {
+            if(image.sprite != active) {
+                RuntimeManager.PlayOneShot("event:/Lamp");
+            }
             image.sprite = active;
             light.SetActive(true);
 
