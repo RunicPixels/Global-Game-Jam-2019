@@ -17,7 +17,7 @@ public class SceneManagerGGJ : MonoBehaviour
     }
 
     public void LoadScene(int index) {
-        LoadScene(index);
+        SceneManager.LoadScene(index);
     }
 
     public void StopGame() {
