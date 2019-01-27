@@ -80,25 +80,16 @@ public class Player : MonoBehaviour
             }
         }
     }
-    // Update is called once per frame
-
-    private void FixedUpdate() {
-        Debug.Log(IsGrounded());
-    }
 
     private bool IsGrounded() {
-        return Physics2D.Raycast(transform.position, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f);
+        if (Physics2D.Raycast(transform.position + new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f) ||
+            Physics2D.Raycast(transform.position - new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
-
-    //private bool IsGrounded() {
-    //    if (Physics2D.Raycast(transform.position + new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f) ||
-    //        Physics2D.Raycast(transform.position - new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f)) {
-    //        return true;
-    //    }
-    //    else {
-    //        return false;
-    //    }
-    //}
 
 
     private void OnCollisionEnter2D(Collision2D collision) {
