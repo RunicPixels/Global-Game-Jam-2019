@@ -8,6 +8,9 @@ TagManager:
   - Pickup
   - NewAudio
   - Lamp
+  - Adventure2
+  - Adventure3
+  - End
   layers:
   - Default
   - TransparentFX
