@@ -27,11 +27,12 @@ MonoBehaviour:
   - {fileID: 114109114230718534}
   - {fileID: 114093223377980144}
   - {fileID: 114289173080667764}
+  - {fileID: 114195073073470228}
   MasterBanks:
   - {fileID: 114262989729434362}
   StringsBanks:
   - {fileID: 114102719595434326}
-  stringsBankWriteTime: 636841812036056589
+  stringsBankWriteTime: 636841914388133320
   cacheVersion: 3
 --- !u!114 &114040367927401452
 MonoBehaviour:
@@ -105,12 +106,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: GGJ 19 FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636841812036056589
+  lastModified: 636841914388133320
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1184
+    Value: 1242
   Exists: 1
+--- !u!114 &114103174264181472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Flying
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114109114230718534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +229,32 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3565
+--- !u!114 &114195073073470228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Adventure_Music
+  guid: 27d2543fe21f0248896c36d38f8acf0b
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114878434777350354}
+  - {fileID: 114695116650305192}
+  - {fileID: 114847578874588682}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 597262
 --- !u!114 &114195356976166152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,11 +312,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 636841812035986622
+  lastModified: 636841914388053311
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2495136
+    Value: 10496576
   Exists: 1
 --- !u!114 &114289173080667764
 MonoBehaviour:
@@ -318,7 +361,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114874233070143320}
+  - {fileID: 114103174264181472}
   MinDistance: 0
   MaxDistance: 0
   Length: 9500
@@ -340,11 +383,27 @@ MonoBehaviour:
   - {fileID: 114262989729434362}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 89140
+  Length: 115620
+--- !u!114 &114695116650305192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: END
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114744217811137924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,6 +496,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 143725
+--- !u!114 &114847578874588682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: LEVEL 3
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114874233070143320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,6 +525,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Flying
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114878434777350354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: LEVEL 2
   Min: 0
   Max: 1
   Default: 0

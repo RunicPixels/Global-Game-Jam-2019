@@ -835,7 +835,7 @@ MonoBehaviour:
   - {fileID: 642562916}
   - {fileID: 1819349850}
   - {fileID: 638832473}
-  duration: 3
+  duration: 4
   alpha: 0
 --- !u!1 &1361356080
 GameObject:
