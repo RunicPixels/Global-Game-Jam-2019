@@ -33,8 +33,8 @@ public class Player : MonoBehaviour
 
     private void Update() {
         if (firstTime) {
-            rigidBody.AddForce(new Vector2(Random.Range(-0.01f, 0.01f), 2f));
-            rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -0.1f, 0.1f), Mathf.Clamp(rigidBody.velocity.y, -20f, 0f));
+            rigidBody.AddForce(new Vector2(Random.Range(-0.01f, 0.01f), 4f));
+            rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -0.1f, 0.1f), Mathf.Clamp(rigidBody.velocity.y, -25f, 0f));
 
         }
         else {
