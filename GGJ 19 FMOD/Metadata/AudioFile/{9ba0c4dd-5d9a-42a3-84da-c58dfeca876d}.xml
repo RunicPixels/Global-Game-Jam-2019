@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{9ba0c4dd-5d9a-42a3-84da-c58dfeca876d}">
+        <property name="assetPath">
+            <value>GGJ19_Ambiance_Outside_Birds_06.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>8.3633958333333336</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f9d84557-822e-4167-9292-f17da1c72339}</destination>
+        </relationship>
+    </object>
+</objects>

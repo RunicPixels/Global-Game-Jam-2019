@@ -126,6 +126,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{7d2d908b-b716-4a6a-ac07-59abcf1bae1a}">
+        <property name="volume">
+            <value>3</value>
+        </property>
         <property name="name">
             <value>Dragon_Stone</value>
         </property>
@@ -155,6 +158,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{1d581a8c-43a6-4f1c-a948-4a9aebcd3060}">
+        <property name="volume">
+            <value>2.5</value>
+        </property>
         <property name="name">
             <value>Dragon_Wings</value>
         </property>
@@ -187,6 +193,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{a40e00d3-b318-4e2f-8d31-49e5d4b692f4}">
+        <property name="volume">
+            <value>5.5</value>
+        </property>
         <property name="name">
             <value>Dragon_Voice</value>
         </property>
