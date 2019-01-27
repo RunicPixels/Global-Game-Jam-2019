@@ -125,7 +125,7 @@
     </object>
     <object class="EventMixerGroup" id="{358b66f6-6f58-450c-a8d7-355448a124bf}">
         <property name="volume">
-            <value>3.5</value>
+            <value>2</value>
         </property>
         <property name="name">
             <value>Ambiance_Birds</value>
@@ -173,7 +173,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>9.5</value>
+            <value>12.800000000000001</value>
         </property>
         <relationship name="timeline">
             <destination>{7078c8d8-a42d-4979-a8bc-9d710d4cf2c6}</destination>

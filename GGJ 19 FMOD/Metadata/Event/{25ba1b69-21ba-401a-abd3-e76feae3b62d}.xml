@@ -2,7 +2,10 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{25ba1b69-21ba-401a-abd3-e76feae3b62d}">
         <property name="name">
-            <value>Dragon_Footsteps_Test</value>
+            <value>_TEST_Dragon_Footsteps</value>
+        </property>
+        <property name="isDefault">
+            <value>true</value>
         </property>
         <property name="outputFormat">
             <value>0</value>
