@@ -80,13 +80,15 @@ public class Player : MonoBehaviour
             }
         }
     }
-    // Update is called once per frame
-
-    private void FixedUpdate() {
-    }
 
     private bool IsGrounded() {
-        return Physics2D.Raycast(transform.position, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.2f);
+        if (Physics2D.Raycast(transform.position + new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f) ||
+            Physics2D.Raycast(transform.position - new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 

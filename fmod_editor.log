@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000007E3F6558 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000007E3FB3B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,12 +15,659 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_04', format=2, channels=1, frequency=48000, lengthbytes=2272, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.200073.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_02', format=2, channels=1, frequency=48000, lengthbytes=2080, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113312.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_06', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011963.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_04', format=2, channels=1, frequency=48000, lengthbytes=2144, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.013367.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_02', format=2, channels=1, frequency=48000, lengthbytes=1984, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011292.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_06', format=2, channels=1, frequency=48000, lengthbytes=2272, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.161469.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_01', format=2, channels=1, frequency=48000, lengthbytes=1952, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.015717.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_01', format=2, channels=1, frequency=48000, lengthbytes=2048, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.205902.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_03', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.007782.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_05', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.005676.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_03', format=2, channels=1, frequency=48000, lengthbytes=2048, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126678.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2759EA8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_05', format=2, channels=1, frequency=48000, lengthbytes=2304, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.123596.
+[LOG] SoundI::release                          :  (00000000421FFB48)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_01 (000000009B56B6F8)
+[LOG] SoundI::release                          :  (0000000076AEF768)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_02 (000000009B56A378)
+[LOG] SoundI::release                          :  (00000000421FF138)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_03 (000000009B566758)
+[LOG] SoundI::release                          :  (0000000076AEF038)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_04 (000000009B56A038)
+[LOG] SoundI::release                          :  (00000000421FE2D8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_05 (000000009B567118)
+[LOG] SoundI::release                          :  (0000000076AF05C8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_06 (000000009B566F78)
+[LOG] SoundI::release                          :  (00000000421FF588)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_01 (000000009B56A6B8)
+[LOG] SoundI::release                          :  (0000000076AEED58)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_02 (000000009B565718)
+[LOG] SoundI::release                          :  (00000000421FE448)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_03 (000000009B56AB98)
+[LOG] SoundI::release                          :  (0000000076AF08A8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_04 (000000009B565D98)
+[LOG] SoundI::release                          :  (00000000421FEA08)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_05 (000000009B56AD38)
+[LOG] SoundI::release                          :  (00000000421FEB78)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_06 (000000009B5665B8)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_04', format=2, channels=1, frequency=48000, lengthbytes=2272, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.200073.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_02', format=2, channels=1, frequency=48000, lengthbytes=2080, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113312.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_06', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011963.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_04', format=2, channels=1, frequency=48000, lengthbytes=2144, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.013367.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_02', format=2, channels=1, frequency=48000, lengthbytes=1984, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011292.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_06', format=2, channels=1, frequency=48000, lengthbytes=2272, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.161469.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_01', format=2, channels=1, frequency=48000, lengthbytes=1952, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.015717.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_01', format=2, channels=1, frequency=48000, lengthbytes=2048, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.205902.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_03', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.007782.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_05', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.005676.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_03', format=2, channels=1, frequency=48000, lengthbytes=2048, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126678.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C2532CC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_05', format=2, channels=1, frequency=48000, lengthbytes=2304, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.123596.
+[LOG] SoundI::release                          :  (00000000421FF138)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_01 (000000009B5665B8)
+[LOG] SoundI::release                          :  (00000000421FEB78)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_02 (000000009B56A6B8)
+[LOG] SoundI::release                          :  (00000000208E9798)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_03 (000000009B565718)
+[LOG] SoundI::release                          :  (00000000421FF588)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_04 (000000009B56A378)
+[LOG] SoundI::release                          :  (00000000208E9D58)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_05 (000000009B568638)
+[LOG] SoundI::release                          :  (00000000421FE448)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_06 (000000009B56B6F8)
+[LOG] SoundI::release                          :  (00000000208EAE98)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_01 (000000009B565D98)
+[LOG] SoundI::release                          :  (00000000421FEA08)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_02 (000000009B56A038)
+[LOG] SoundI::release                          :  (00000000208E9EC8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_03 (000000009B566F78)
+[LOG] SoundI::release                          :  (00000000421FE2D8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_04 (000000009B567FB8)
+[LOG] SoundI::release                          :  (00000000208EA038)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_05 (000000009B566758)
+[LOG] SoundI::release                          :  (00000000421FFB48)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_06 (000000009B5675F8)
+[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_04', format=2, channels=1, frequency=48000, lengthbytes=2272, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.200073.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_02', format=2, channels=1, frequency=48000, lengthbytes=2080, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.113312.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_06', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011963.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_04', format=2, channels=1, frequency=48000, lengthbytes=2144, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.013367.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_02', format=2, channels=1, frequency=48000, lengthbytes=1984, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011292.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_06', format=2, channels=1, frequency=48000, lengthbytes=2272, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.161469.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_01', format=2, channels=1, frequency=48000, lengthbytes=1952, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.015717.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_01', format=2, channels=1, frequency=48000, lengthbytes=2048, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.205902.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_03', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.007782.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Leave_05', format=2, channels=1, frequency=48000, lengthbytes=2016, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.005676.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_03', format=2, channels=1, frequency=48000, lengthbytes=2048, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.126678.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3655136
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 53600
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000DB83F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF846751100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8467510D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8467511D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF846751290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000C275C5D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Dragon_Footstep_Slime_05', format=2, channels=1, frequency=48000, lengthbytes=2304, lengthpcm=10800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.123596.
+[LOG] SoundI::release                          :  (00000000208EA5F8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_01 (000000009B566758)
+[LOG] SoundI::release                          :  (00000000208EA038)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_02 (000000009B565718)
+[LOG] SoundI::release                          :  (00000000421FEA08)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_03 (000000009B5668F8)
+[LOG] SoundI::release                          :  (00000000208E9EC8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_04 (000000009B5665B8)
+[LOG] SoundI::release                          :  (00000000421FE448)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_05 (000000009B566F78)
+[LOG] SoundI::release                          :  (00000000208E9D58)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Leave_06 (000000009B56A6B8)
+[LOG] SoundI::release                          :  (00000000421FE2D8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_01 (000000009B56B6F8)
+[LOG] SoundI::release                          :  (00000000208E9798)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_02 (000000009B56A038)
+[LOG] SoundI::release                          :  (00000000421FEB78)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_03 (000000009B56A378)
+[LOG] SoundI::release                          :  (00000000208EAD28)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_04 (000000009B5675F8)
+[LOG] SoundI::release                          :  (00000000421FF588)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_05 (000000009B56AB98)
+[LOG] SoundI::release                          :  (00000000208EAE98)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Footstep_Slime_06 (000000009B565D98)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
