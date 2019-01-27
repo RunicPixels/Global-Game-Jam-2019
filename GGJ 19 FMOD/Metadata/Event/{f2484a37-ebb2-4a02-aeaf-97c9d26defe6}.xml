@@ -102,6 +102,9 @@
         <property name="isAsync">
             <value>true</value>
         </property>
+        <property name="isCutoff">
+            <value>true</value>
+        </property>
         <property name="length">
             <value>0.22500000000000001</value>
         </property>
@@ -133,6 +136,9 @@
     </object>
     <object class="MultiSound" id="{2e523b25-ef27-4089-9400-e680ea0b65b3}">
         <property name="isAsync">
+            <value>true</value>
+        </property>
+        <property name="isCutoff">
             <value>true</value>
         </property>
         <property name="length">

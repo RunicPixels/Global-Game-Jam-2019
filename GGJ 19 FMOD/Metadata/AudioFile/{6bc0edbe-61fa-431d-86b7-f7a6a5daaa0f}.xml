@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{6bc0edbe-61fa-431d-86b7-f7a6a5daaa0f}">
+        <property name="assetPath">
+            <value>(GGJ)_Laag1_B_.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>42.043770833333333</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f9d84557-822e-4167-9292-f17da1c72339}</destination>
+        </relationship>
+    </object>
+</objects>
