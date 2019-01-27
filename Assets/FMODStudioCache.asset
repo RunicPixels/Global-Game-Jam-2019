@@ -21,15 +21,17 @@ MonoBehaviour:
   - {fileID: 114335347505528542}
   - {fileID: 114744217811137924}
   - {fileID: 114180411973706180}
-  - {fileID: 114839722657209474}
   - {fileID: 114815608934461584}
   - {fileID: 114777583831977402}
-  - {fileID: 114922097097438556}
+  - {fileID: 114235428420267988}
+  - {fileID: 114109114230718534}
+  - {fileID: 114093223377980144}
+  - {fileID: 114289173080667764}
   MasterBanks:
   - {fileID: 114262989729434362}
   StringsBanks:
   - {fileID: 114102719595434326}
-  stringsBankWriteTime: 636841731130208595
+  stringsBankWriteTime: 636841812036056589
   cacheVersion: 3
 --- !u!114 &114040367927401452
 MonoBehaviour:
@@ -67,6 +69,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1005088
   Exists: 0
+--- !u!114 &114093223377980144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menu_Play
+  guid: 6466ce104dbfd94e8a43707ef05c20c3
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
 --- !u!114 &114102719595434326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,12 +105,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: GGJ 19 FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636841731130208595
+  lastModified: 636841812036056589
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1090
+    Value: 1184
   Exists: 1
+--- !u!114 &114109114230718534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menu_Quit
+  guid: 3dff08a6f81d2f459ca898a7d493938d
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6000
 --- !u!114 &114139066529690404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +232,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 454240
   Exists: 0
+--- !u!114 &114235428420267988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance_Inside
+  guid: 06dc32021853d748a60a54896012de3d
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 40118
 --- !u!114 &114262989729434362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,12 +269,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 636841731127090393
+  lastModified: 636841812035986622
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3708736
+    Value: 2495136
   Exists: 1
+--- !u!114 &114289173080667764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/_TEST_Dragon_Footsteps
+  guid: 691bba25ba211a40abd3e76feae3b62d
+  Banks:
+  - {fileID: 114262989729434362}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2232
 --- !u!114 &114335347505528542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +318,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114177460268010270}
+  - {fileID: 114874233070143320}
   MinDistance: 0
   MaxDistance: 0
   Length: 9500
@@ -250,7 +344,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 84140
+  Length: 89140
 --- !u!114 &114744217811137924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +437,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 143725
+--- !u!114 &114874233070143320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Flying
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114922097097438556
 MonoBehaviour:
   m_ObjectHideFlags: 0

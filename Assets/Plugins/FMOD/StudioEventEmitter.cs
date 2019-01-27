@@ -257,6 +257,13 @@ namespace FMODUnity
                 return (playbackState != FMOD.Studio.PLAYBACK_STATE.STOPPED);
             }
             return false;
-        }        
+        }
+
+        public void ChangeEvent(string newEvent) {
+            Event = newEvent;
+            Stop();
+            Lookup();
+            Play();
+        }
     }
 }

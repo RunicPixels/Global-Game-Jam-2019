@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Killer
   - Pickup
+  - NewAudio
   layers:
   - Default
   - TransparentFX
