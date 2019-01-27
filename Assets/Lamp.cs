@@ -28,7 +28,6 @@ public class Lamp : MonoBehaviour
             }
             image.sprite = active;
             light.SetActive(true);
-
         }
     }
 }
