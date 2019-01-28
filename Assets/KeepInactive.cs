@@ -45,16 +45,15 @@ public class KeepInactive : MonoBehaviour {
     }
 
     public void TurnOff() {
-        emitter.AllowFadeout = true;
+        
         
     }
 
     public IEnumerator TurnOffYield() {
         while (SceneManager.GetActiveScene().buildIndex == 0) {
-            StudioListener listener = GetComponent<StudioListener>();
             yield return new WaitForSeconds(0.1f);
         }
-
+        emitter.AllowFadeout = true;
         emitter.Stop();
     }
 }
