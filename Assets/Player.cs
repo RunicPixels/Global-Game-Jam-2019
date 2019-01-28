@@ -19,12 +19,13 @@ public class Player : MonoBehaviour
 
     public bool firstTime;
     public float returnSpeed = 10;
-    public int jumps = 2;
+    public int jumps = 1;
     public float canJumpCooldown = 0.5f;
     public float maxSpeed = 10;
     public float acceleration = 5;
     public float jumpHeight = 10;
     public float glideMultiplier = 0.9f;
+    public float justJumped = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -40,11 +41,15 @@ public class Player : MonoBehaviour
     }
 
     private void Update() {
-        if (!firstTime) {
+        if (firstTime) {
+            rigidBody.AddForce(new Vector2(Random.Range(-0.01f, 0.01f), -5f * Time.deltaTime));
+            rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -0.1f, 0.1f), Mathf.Clamp(rigidBody.velocity.y, -55f, 0f));
+
+        }
+        else {
             if (!canJump) {
                 if (IsGrounded()) {
                     canJump = true;
-                    jumpCounter = jumps;
                 }
 
             }
@@ -53,20 +58,18 @@ public class Player : MonoBehaviour
                 canJumpInternalCooldown = canJumpCooldown;
             }
 
+            if(canJump && IsGrounded() && justJumped <= 0f) ResetJumpCounter();
+            else if(justJumped > 0f) {
+                justJumped -= Time.deltaTime;
+            }
+
             if (canJumpInternalCooldown >= 0f) {
                 canJumpInternalCooldown -= Time.deltaTime;
             }
             else {
                 canJump = IsGrounded();
             }
-        }
 
-        if (firstTime) {
-            rigidBody.AddForce(new Vector2(Random.Range(-0.01f, 0.01f), -5f * Time.deltaTime));
-            rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -0.1f, 0.1f), Mathf.Clamp(rigidBody.velocity.y, -55f, 0f));
-
-        }
-        else {
             if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f && Mathf.Abs(rigidBody.velocity.x) < maxSpeed) {
                 animyeetor.SetBool("Moving", true);
 
@@ -84,15 +87,20 @@ public class Player : MonoBehaviour
                 rigidBody.velocity = new Vector2(rigidBody.velocity.x - rigidBody.velocity.x % 1f, rigidBody.velocity.y);
             }
 
-            if (Input.GetButtonDown("Jump") && jumpCounter > 0) {
+            if (Input.GetButtonDown("Jump") && jumpCounter > 0 && justJumped <= 0f) {
                 if (IsGrounded() && canJump == true) {
+                    justJumped = 0.1f;
                     canJump = false;
+                    ResetJumpCounter();
+                    rigidBody.MovePosition(new Vector2(rigidBody.position.x, rigidBody.position.y + colliderP.bounds.extents.y + colliderP.offset.y + 0.3f));
                     animyeetor.SetTrigger("DoJump");
+
                 }
                 else {
                     animyeetor.SetTrigger("DoFly");
                 }
                 jumpCounter -= 1;
+                
                 rigidBody.velocity = (new Vector2(rigidBody.velocity.x, jumpHeight));
             }
             else if (Input.GetButton("Jump") && !IsGrounded()) {
@@ -101,13 +109,15 @@ public class Player : MonoBehaviour
                     rigidBody.velocity = new Vector2(rigidBody.velocity.x, rigidBody.velocity.y * glideMultiplier);
                 }
             }
+
+
         }
     }
 
     private bool IsGrounded() {
-        if (Physics2D.Raycast(transform.position + new Vector3(colliderP.bounds.extents.x, 0) * 0.9f, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.5f) ||
-            Physics2D.Raycast(transform.position - new Vector3(colliderP.bounds.extents.x, 0) * 0.9f, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.5f) ||
-            Physics2D.Raycast(transform.position, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.5f)) {
+        if (Physics2D.Raycast(transform.position + new Vector3(colliderP.bounds.extents.x, 0) * 0.9f, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.2f) ||
+            Physics2D.Raycast(transform.position - new Vector3(colliderP.bounds.extents.x, 0) * 0.9f, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.2f) ||
+            Physics2D.Raycast(transform.position, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.2f)) {
             return true;
         }
         else {
@@ -115,7 +125,9 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    public void ResetJumpCounter() {
+        jumpCounter = jumps;
+    }
     private void OnCollisionEnter2D(Collision2D collision) {
         if(IsGrounded()) {
             if(firstTime) {

@@ -24,14 +24,19 @@ public class AdventureMusic : MonoBehaviour
     private void Start() {
         dragonGlide.start();
     }
-    private void OnTriggerStay2D(Collider2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.tag == "Adventure2") {
+            Debug.Log("Enabling Adventure 2");
             level2.setValue(1);
         }
         if(collision.tag == "Adventure3") {
+            Debug.Log("Enabling Adventure 3");
             level3.setValue(1);
         }
         if(collision.tag == "End") {
+            KeepInactive.Instance.FirstMenuMusic = false;
+            KeepInactive.Instance.firstScene = false;
+            Debug.Log("Enabling End");
             end.setValue(1);
         }
     }
