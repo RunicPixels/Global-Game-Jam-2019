@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
@@ -24,7 +24,7 @@ public class AdventureMusic : MonoBehaviour
     private void Start() {
         dragonGlide.start();
     }
-    private void OnTriggerEnter2D(Collider2D collision) {
+    private void OnTriggerStay2D(Collider2D collision) {
         if(collision.tag == "Adventure2") {
             level2.setValue(1);
         }

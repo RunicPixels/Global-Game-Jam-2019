@@ -1,6 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class Player : MonoBehaviour
     private float canJumpInternalCooldown;
     private float jumpCounter;
     private Transform respawnPoint;
+
+    [EventRef]
+    public string landingSound; 
 
     public bool firstTime;
     public float returnSpeed = 10;
@@ -31,19 +35,21 @@ public class Player : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();   
     }
 
-    private void Update() {
-        if (firstTime) {
-            rigidBody.AddForce(new Vector2(Random.Range(-0.01f, 0.01f), 4f));
-            rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -0.1f, 0.1f), Mathf.Clamp(rigidBody.velocity.y, -25f, 0f));
+    private void FixedUpdate() {
 
-        }
-        else {
+    }
+
+    private void Update() {
+        if (!firstTime) {
             if (!canJump) {
-                canJump = IsGrounded();
+                if (IsGrounded()) {
+                    canJump = true;
+                    jumpCounter = jumps;
+                }
+
             }
             else if (IsGrounded()) {
                 animyeetor.SetBool("IsFlying", false);
-                jumpCounter = jumps;
                 canJumpInternalCooldown = canJumpCooldown;
             }
 
@@ -53,8 +59,14 @@ public class Player : MonoBehaviour
             else {
                 canJump = IsGrounded();
             }
+        }
 
+        if (firstTime) {
+            rigidBody.AddForce(new Vector2(Random.Range(-0.01f, 0.01f), -5f * Time.deltaTime));
+            rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -0.1f, 0.1f), Mathf.Clamp(rigidBody.velocity.y, -55f, 0f));
 
+        }
+        else {
             if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f && Mathf.Abs(rigidBody.velocity.x) < maxSpeed) {
                 animyeetor.SetBool("Moving", true);
 
@@ -73,7 +85,10 @@ public class Player : MonoBehaviour
             }
 
             if (Input.GetButtonDown("Jump") && jumpCounter > 0) {
-                if (IsGrounded()) animyeetor.SetTrigger("DoJump");
+                if (IsGrounded() && canJump == true) {
+                    canJump = false;
+                    animyeetor.SetTrigger("DoJump");
+                }
                 else {
                     animyeetor.SetTrigger("DoFly");
                 }
@@ -90,8 +105,9 @@ public class Player : MonoBehaviour
     }
 
     private bool IsGrounded() {
-        if (Physics2D.Raycast(transform.position + new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f) ||
-            Physics2D.Raycast(transform.position - new Vector3(colliderP.offset.x, 0), -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.3f)) {
+        if (Physics2D.Raycast(transform.position + new Vector3(colliderP.bounds.extents.x, 0) * 0.9f, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.5f) ||
+            Physics2D.Raycast(transform.position - new Vector3(colliderP.bounds.extents.x, 0) * 0.9f, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.5f) ||
+            Physics2D.Raycast(transform.position, -transform.up, colliderP.bounds.extents.y - colliderP.offset.y * 1.5f)) {
             return true;
         }
         else {
@@ -104,8 +120,10 @@ public class Player : MonoBehaviour
         if(IsGrounded()) {
             if(firstTime) {
                 firstTime = false;
+                RuntimeManager.PlayOneShot(landingSound);
             }
             animyeetor.SetTrigger("Land");
+            animyeetor.SetBool("IsFlying", false);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision) {
@@ -114,6 +132,12 @@ public class Player : MonoBehaviour
         }
         if(collision.tag == "Respawn") {
             respawnPoint = collision.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision) {
+        if(!IsGrounded()) {
+            animyeetor.SetBool("IsFlying", true);
         }
     }
 }
