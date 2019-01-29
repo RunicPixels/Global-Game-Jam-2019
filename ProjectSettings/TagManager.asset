@@ -11,6 +11,7 @@ TagManager:
   - Adventure2
   - Adventure3
   - End
+  - FirstMenuContainer
   layers:
   - Default
   - TransparentFX
