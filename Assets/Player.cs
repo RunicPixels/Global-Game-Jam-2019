@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     public float jumpHeight = 10;
     public float glideMultiplier = 0.9f;
     public float justJumped = 0f;
+    public float stepHeight = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +79,11 @@ public class Player : MonoBehaviour
                 if (rigidBody.velocity.x * Input.GetAxis("Horizontal") < 0) {
                     switchBoost *= returnSpeed;
                 }
+
+                if (Physics2D.Raycast(rigidBody.position + new Vector2(0, stepHeight),rigidBody.velocity,colliderP.bounds.extents.x)) {
+                    rigidBody.transform.position = rigidBody.transform.position + new Vector3(0, colliderP.bounds.extents.y + stepHeight);
+                }
+
                 rigidBody.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration * switchBoost, 0) * Time.deltaTime);
                 rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -maxSpeed + 0.3f, maxSpeed - 0.3f), rigidBody.velocity.y);
                 animyeetor.SetFloat("Speed", Mathf.Abs(rigidBody.velocity.x) * 0.4f);

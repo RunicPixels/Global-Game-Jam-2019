@@ -41,6 +41,7 @@ public class KeepInactive : MonoBehaviour {
     
     public void DisableMusic() {
         firstScene = false;
+        emitter.SetParameter("MenuClick", 1);
         StartCoroutine(TurnOffYield());
     }
 
