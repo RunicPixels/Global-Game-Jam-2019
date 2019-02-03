@@ -7,10 +7,57 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000003FBD1078 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000000E6A46098 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] SoundI::release                          :  (00000000747B6D38)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_02 (0000000042ACE688)
+[LOG] SoundI::release                          : (GGJ)_Laag1_A+intro (000000006600B238)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000047F345D8)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000076CB3C98)
+[LOG] SoundI::release                          : GGJ19_Ambiance_Outside_Traffic (000000006600AD28)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (00000000E7441198)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (00000000C0825258)
+[LOG] SoundI::release                          :  (00000000747B5ED8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_03 (0000000047F352D8)
+[LOG] SoundI::release                          :  (00000000747B75D8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_04 (00000000E7442D38)
+[LOG] SoundI::release                          :  (00000000747B68E8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_05 (00000000E74429F8)
+[LOG] SoundI::release                          :  (00000000747B9128)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_06 (00000000E7440CB8)
+[LOG] SoundI::release                          :  (00000000747B78B8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_01 (00000000E7443218)
+[LOG] SoundI::release                          :  (00000000747B5BF8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_02 (000000007B1E7EA8)
+[LOG] SoundI::release                          :  (00000000747B85A8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_03 (000000004E9B5D38)
+[LOG] SoundI::release                          :  (00000000747B8B68)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_04 (00000000E7440158)
+[LOG] SoundI::release                          :  (00000000747B9298)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_05 (0000000042ACD988)
+[LOG] SoundI::release                          :  (00000000747B8FB8)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_06 (000000007B1E7828)
+[LOG] SoundI::release                          :  (00000000747B7188)
+[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_01 (0000000042ACE4E8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
+[LOG] SystemI::close                           : Closed.

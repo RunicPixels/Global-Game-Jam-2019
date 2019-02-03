@@ -13,10 +13,15 @@ public class Player : MonoBehaviour
     private float canJumpInternalCooldown;
     private float jumpCounter;
     private Transform respawnPoint;
+    private bool moving = false;
+    private float switchBoost = 1f;
+
 
     [EventRef]
-    public string landingSound; 
+    public string landingSound;
 
+
+   
     public bool firstTime;
     public float returnSpeed = 10;
     public int jumps = 1;
@@ -26,7 +31,8 @@ public class Player : MonoBehaviour
     public float jumpHeight = 10;
     public float glideMultiplier = 0.9f;
     public float justJumped = 0f;
-    public float stepHeight = 1f;
+    public float stepCheckHeight = 0f;
+    public float StepDoHeight = 0.25f;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +44,18 @@ public class Player : MonoBehaviour
     }
 
     private void FixedUpdate() {
+        if(moving) {
+            sprite.flipX = rigidBody.velocity.x < 0;
 
+            if (Physics2D.Raycast(rigidBody.position + new Vector2(0, stepCheckHeight), new Vector2(Input.GetAxis("Horizontal"),0).normalized, colliderP.bounds.extents.x *1.05f) && IsGrounded() && (Physics2D.Raycast(rigidBody.position + new Vector2(0, stepCheckHeight+StepDoHeight), new Vector2(Input.GetAxis("Horizontal"), 0).normalized, colliderP.bounds.extents.x * 1.05f) == false)) {
+                rigidBody.transform.position = rigidBody.transform.position + new Vector3(0, colliderP.bounds.extents.y + stepCheckHeight +StepDoHeight);
+                rigidBody.velocity = new Vector2(rigidBody.velocity.x * 0.75f, 0.1f);
+            }
+
+            rigidBody.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration * switchBoost, 0) * Time.fixedDeltaTime);
+            rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -maxSpeed + 0.3f, maxSpeed - 0.3f), rigidBody.velocity.y);
+            animyeetor.SetFloat("Speed", Mathf.Abs(rigidBody.velocity.x) * 0.4f);
+        }
     }
 
     private void Update() {
@@ -71,26 +88,22 @@ public class Player : MonoBehaviour
                 canJump = IsGrounded();
             }
 
-            if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f && Mathf.Abs(rigidBody.velocity.x) < maxSpeed) {
+            if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.05f && Mathf.Abs(rigidBody.velocity.x) < maxSpeed) {
+                switchBoost = 1f;
                 animyeetor.SetBool("Moving", true);
-
-                float switchBoost = 1f;
-                sprite.flipX = rigidBody.velocity.x < 0;
+                moving = true;
                 if (rigidBody.velocity.x * Input.GetAxis("Horizontal") < 0) {
                     switchBoost *= returnSpeed;
                 }
 
-                if (Physics2D.Raycast(rigidBody.position + new Vector2(0, stepHeight),rigidBody.velocity,colliderP.bounds.extents.x)) {
-                    rigidBody.transform.position = rigidBody.transform.position + new Vector3(0, colliderP.bounds.extents.y + stepHeight);
-                }
-
-                rigidBody.AddForce(new Vector2(Input.GetAxis("Horizontal") * acceleration * switchBoost, 0) * Time.deltaTime);
-                rigidBody.velocity = new Vector2(Mathf.Clamp(rigidBody.velocity.x, -maxSpeed + 0.3f, maxSpeed - 0.3f), rigidBody.velocity.y);
-                animyeetor.SetFloat("Speed", Mathf.Abs(rigidBody.velocity.x) * 0.4f);
             }
             else if (IsGrounded()) {
+                moving = false;
                 animyeetor.SetBool("Moving", false);
                 rigidBody.velocity = new Vector2(rigidBody.velocity.x - rigidBody.velocity.x % 1f, rigidBody.velocity.y);
+            }
+            else {
+                moving = false;
             }
 
             if (Input.GetButtonDown("Jump") && jumpCounter > 0 && justJumped <= 0f) {

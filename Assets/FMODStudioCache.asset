@@ -36,7 +36,7 @@ MonoBehaviour:
   - {fileID: 114704741843817882}
   StringsBanks:
   - {fileID: 114102719595434326}
-  stringsBankWriteTime: 636842750497617091
+  stringsBankWriteTime: 636848075351039464
   cacheVersion: 3
 --- !u!114 &114018532178530416
 MonoBehaviour:
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: GGJ 19 FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636842750497617091
+  lastModified: 636848075351039464
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -317,9 +317,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114563806908551708}
-  - {fileID: 114436366509078560}
-  - {fileID: 114192130984163754}
+  - {fileID: 114528190493646952}
+  - {fileID: 114362961532371302}
+  - {fileID: 114509580409567022}
   MinDistance: 0
   MaxDistance: 0
   Length: 550072
@@ -461,7 +461,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114092467251688924}
+  - {fileID: 114449235700997566}
   MinDistance: 0
   MaxDistance: 0
   Length: 9500
@@ -478,6 +478,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: LEVEL 2
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114362961532371302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: END
   Min: 0
   Max: 1
   Default: 0
@@ -520,6 +536,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114449235700997566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Flying
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114466840955564290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,12 +565,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Unity\Projects\Global-Game-Jam-2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank
-  lastModified: 636842750497587113
+  lastModified: 636848075350209123
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 10585536
   Exists: 1
+--- !u!114 &114509580409567022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: LEVEL 3
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114528190493646952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: LEVEL 2
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114559366733963554
 MonoBehaviour:
   m_ObjectHideFlags: 0
