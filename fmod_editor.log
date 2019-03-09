@@ -7,57 +7,551 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000000E6A46098 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000003F6517D8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SoundI::release                          :  (00000000747B6D38)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_02 (0000000042ACE688)
-[LOG] SoundI::release                          : (GGJ)_Laag1_A+intro (000000006600B238)
-[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000047F345D8)
-[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000076CB3C98)
-[LOG] SoundI::release                          : GGJ19_Ambiance_Outside_Traffic (000000006600AD28)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (00000000E7441198)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (00000000C0825258)
-[LOG] SoundI::release                          :  (00000000747B5ED8)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_03 (0000000047F352D8)
-[LOG] SoundI::release                          :  (00000000747B75D8)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_04 (00000000E7442D38)
-[LOG] SoundI::release                          :  (00000000747B68E8)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_05 (00000000E74429F8)
-[LOG] SoundI::release                          :  (00000000747B9128)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_06 (00000000E7440CB8)
-[LOG] SoundI::release                          :  (00000000747B78B8)
-[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_01 (00000000E7443218)
-[LOG] SoundI::release                          :  (00000000747B5BF8)
-[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_02 (000000007B1E7EA8)
-[LOG] SoundI::release                          :  (00000000747B85A8)
-[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_03 (000000004E9B5D38)
-[LOG] SoundI::release                          :  (00000000747B8B68)
-[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_04 (00000000E7440158)
-[LOG] SoundI::release                          :  (00000000747B9298)
-[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_05 (0000000042ACD988)
-[LOG] SoundI::release                          :  (00000000747B8FB8)
-[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_06 (000000007B1E7828)
-[LOG] SoundI::release                          :  (00000000747B7188)
-[LOG] SoundI::release                          :     GGJ19_Dragon_Glide_01 (0000000042ACE4E8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[ERR] RuntimeBankModel::openFile               : Failed to open file 'D:\Unity\Projects\Global-Game-Jam-2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::finishLoadBank                  : Bank with guid {f7c77e84-3505-4ec3-b1ff-708221ad18cb} has already been loaded
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF89A8 : node = 000000004C7DB720
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF89A8
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DB838
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ_Ambiance_Inside', format=2, channels=1, frequency=48000, lengthbytes=330080, lengthpcm=1925687, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.019928.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF89A8
+[LOG] SoundI::getSubSound                      : sound 0000000052BF89A8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF7718 : node = 000000004C7DB9C0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF7718
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DBAD8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ_Ambiance_Inside', format=2, channels=1, frequency=48000, lengthbytes=330080, lengthpcm=1925687, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.019928.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF7718
+[LOG] SoundI::getSubSound                      : sound 0000000052BF7718.  Subsound index 0 / 1
+[LOG] SoundI::release                          : GGJ_Ambiance_Inside (0000000052BF89A8)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000052B4DF68)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000052BF7568)
+[LOG] SoundI::release                          : GGJ_Ambiance_Inside (0000000052BF7718)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000052B4CD88)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000052BF8B58)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[ERR] assert                                   : assertion: 'mMasterBus == nullptr' failed
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[ERR] RuntimeBankModel::openFile               : Failed to open file 'D:\Unity\Projects\Global-Game-Jam-2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::finishLoadBank                  : Bank with guid {f7c77e84-3505-4ec3-b1ff-708221ad18cb} has already been loaded
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F8DF2E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_03', format=2, channels=1, frequency=48000, lengthbytes=25632, lengthpcm=197546, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.018097.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F8DF2E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_02', format=2, channels=1, frequency=48000, lengthbytes=50528, lengthpcm=401443, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.013641.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F8DF2E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_01', format=2, channels=1, frequency=48000, lengthbytes=40512, lengthpcm=322079, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.006012.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F8DF2E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_05', format=2, channels=1, frequency=48000, lengthbytes=1184, lengthpcm=401443, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F8DF2E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_06', format=2, channels=1, frequency=48000, lengthbytes=1184, lengthpcm=401443, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F8DF2E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_04', format=2, channels=1, frequency=48000, lengthbytes=53408, lengthpcm=410921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.015076.
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF7568 : node = 000000004C7DC980
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF7568
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DCA98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ19_Ambiance_Outside_Traffic', format=2, channels=1, frequency=48000, lengthbytes=145504, lengthpcm=953435, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.046936.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF7568
+[LOG] SoundI::getSubSound                      : sound 0000000052BF7568.  Subsound index 0 / 1
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF8B58 : node = 000000004C7DC2F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF8B58
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DC408
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ19_Ambiance_Outside_Traffic', format=2, channels=1, frequency=48000, lengthbytes=145504, lengthpcm=953435, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.046936.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF8B58
+[LOG] SoundI::getSubSound                      : sound 0000000052BF8B58.  Subsound index 0 / 1
+[LOG] SoundI::release                          : GGJ19_Ambiance_Outside_Traffic (0000000052BF7568)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (0000000052B4DC28)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (0000000052BF7A78)
+[LOG] SoundI::release                          :  (0000000052687C38)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_01 (0000000052B4CBE8)
+[LOG] SoundI::release                          :  (0000000052688368)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_02 (0000000052B4CA48)
+[LOG] SoundI::release                          :  (0000000052687AC8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_03 (0000000052B4DF68)
+[LOG] SoundI::release                          :  (0000000052688648)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_04 (0000000052B4D0C8)
+[LOG] SoundI::release                          :  (0000000052687678)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_05 (0000000052B4CD88)
+[LOG] SoundI::release                          :  (00000000526884D8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_06 (0000000052B4CF28)
+[LOG] SoundI::release                          : GGJ19_Ambiance_Outside_Traffic (0000000052BF8B58)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (0000000055FC28C8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (0000000052BF7DD8)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[ERR] assert                                   : assertion: 'mMasterBus == nullptr' failed
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[ERR] RuntimeBankModel::openFile               : Failed to open file 'D:\Unity\Projects\Global-Game-Jam-2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::finishLoadBank                  : Bank with guid {f7c77e84-3505-4ec3-b1ff-708221ad18cb} has already been loaded
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF7568 : node = 000000004C7DC2F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF7568
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DC408
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ_Ambiance_Inside', format=2, channels=1, frequency=48000, lengthbytes=330080, lengthpcm=1925687, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.019928.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF7568
+[LOG] SoundI::getSubSound                      : sound 0000000052BF7568.  Subsound index 0 / 1
+[LOG] SoundI::release                          : GGJ_Ambiance_Inside (0000000052BF7568)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000055FBFE88)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000052BF8B58)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[ERR] assert                                   : assertion: 'mMasterBus == nullptr' failed
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[ERR] RuntimeBankModel::openFile               : Failed to open file 'D:\Unity\Projects\Global-Game-Jam-2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::finishLoadBank                  : Bank with guid {f7c77e84-3505-4ec3-b1ff-708221ad18cb} has already been loaded
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF7568 : node = 000000004C7DB720
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF7568
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DB838
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='(GGJ)_Laag1_A+intro', format=2, channels=2, frequency=48000, lengthbytes=498176, lengthpcm=1934014, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.295623.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF7568
+[LOG] SoundI::getSubSound                      : sound 0000000052BF7568.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF87F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF87F8
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF7718 : node = 000000004C7DC980
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF7718
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DCA98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='(GGJ)_Laag1_A+intro', format=2, channels=2, frequency=48000, lengthbytes=498176, lengthpcm=1934014, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.295623.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF7718
+[LOG] SoundI::getSubSound                      : sound 0000000052BF7718.  Subsound index 0 / 1
+[LOG] SoundI::release                          : (GGJ)_Laag1_A+intro (0000000052BF7568)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000055FC3288)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000052BF87F8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF89A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF89A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF89A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF89A8
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF87F8 : node = 000000004C7DBB10
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF87F8
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DBC28
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='(GGJ)_Laag1_B', format=2, channels=2, frequency=48000, lengthbytes=356512, lengthpcm=1765839, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188824.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF87F8
+[LOG] SoundI::getSubSound                      : sound 0000000052BF87F8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF8B58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF8B58
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF7568 : node = 000000004C7DB1E0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF7568
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DB2F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1751
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='(GGJ)_Laag2_A', format=2, channels=2, frequency=48000, lengthbytes=438208, lengthpcm=1780039, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.722480.
+[LOG] SystemI::createSound                     :     filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000052BF7DD8 : node = 000000004C7DB090
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF7568
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF7DD8
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DB1A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 31532
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='(GGJ)_Laag1_B_', format=2, channels=2, frequency=48000, lengthbytes=309088, lengthpcm=2018101, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.208460.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF7DD8
+[LOG] SoundI::getSubSound                      : sound 0000000052BF7568.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000052BF7DD8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : (GGJ)_Laag1_A+intro (0000000052BF7718)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000055FC0848)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_A+intro (0000000052BF89A8)
+[LOG] SoundI::release                          : (GGJ)_Laag1_B (0000000052BF87F8)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_B (0000000055FC3288)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_B (0000000052BF8B58)
+[LOG] SoundI::release                          : (GGJ)_Laag1_B_ (0000000052BF7DD8)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_B_ (0000000055FC35C8)
+[LOG] SoundI::release                          :     (GGJ)_Laag1_B_ (0000000041868F58)
+[LOG] SoundI::release                          : (GGJ)_Laag2_A (0000000052BF7568)
+[LOG] SoundI::release                          :     (GGJ)_Laag2_A (0000000055FC2588)
+[LOG] SoundI::release                          :     (GGJ)_Laag2_A (0000000052BF7A78)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[ERR] assert                                   : assertion: 'mMasterBus == nullptr' failed
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[ERR] RuntimeBankModel::openFile               : Failed to open file 'D:\Unity\Projects\Global-Game-Jam-2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::finishLoadBank                  : Bank with guid {f7c77e84-3505-4ec3-b1ff-708221ad18cb} has already been loaded
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000041868F58 : node = 000000004C7DB090
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000041868F58
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DB1A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ_Ambiance_Inside', format=2, channels=1, frequency=48000, lengthbytes=330080, lengthpcm=1925687, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.019928.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000041868F58
+[LOG] SoundI::getSubSound                      : sound 0000000041868F58.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF87F8 : node = 000000004C7DBC60
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF87F8
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DBD78
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ_Ambiance_Inside', format=2, channels=1, frequency=48000, lengthbytes=330080, lengthpcm=1925687, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.019928.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF87F8
+[LOG] SoundI::getSubSound                      : sound 0000000052BF87F8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : GGJ_Ambiance_Inside (0000000041868F58)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000055FBFB48)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (00000000418681D8)
+[LOG] SoundI::release                          : GGJ_Ambiance_Inside (0000000052BF87F8)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000055FC2248)
+[LOG] SoundI::release                          :     GGJ_Ambiance_Inside (0000000052BF7A78)
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[ERR] assert                                   : assertion: 'mMasterBus == nullptr' failed
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[ERR] RuntimeBankModel::openFile               : Failed to open file 'D:\Unity\Projects\Global-Game-Jam-2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank'
+[LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 103)
+[LOG] Manager::finishLoadBank                  : Bank with guid {f7c77e84-3505-4ec3-b1ff-708221ad18cb} has already been loaded
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000521295B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_03', format=2, channels=1, frequency=48000, lengthbytes=25632, lengthpcm=197546, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.018097.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000521295B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_02', format=2, channels=1, frequency=48000, lengthbytes=50528, lengthpcm=401443, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.013641.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000521295B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_01', format=2, channels=1, frequency=48000, lengthbytes=40512, lengthpcm=322079, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.006012.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000521295B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_05', format=2, channels=1, frequency=48000, lengthbytes=1184, lengthpcm=401443, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000521295B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_06', format=2, channels=1, frequency=48000, lengthbytes=1184, lengthpcm=401443, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000596FF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBAC311100
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBAC3110D0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBAC3111D0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBAC311290
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000521295B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GGJ19_Ambiance_Outside_Birds_04', format=2, channels=1, frequency=48000, lengthbytes=53408, lengthpcm=410921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.015076.
+[LOG] SystemI::createSound                     : filename = C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000052BF87F8 : node = 000000004C7DCEC0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000052B4DF18.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000052BF87F8
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Stuff\GameDev\Unity\Projects\Global Game Jam 2019\GGJ 19 FMOD\Build\Desktop\Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10498784
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 87968
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000004C7DCFD8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='GGJ19_Ambiance_Outside_Traffic', format=2, channels=1, frequency=48000, lengthbytes=145504, lengthpcm=953435, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.046936.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000052BF87F8
+[LOG] SoundI::getSubSound                      : sound 0000000052BF87F8.  Subsound index 0 / 1
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SoundI::release                          :  (0000000052687398)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_01 (0000000055FC0D28)
+[LOG] SoundI::release                          :  (0000000052687DA8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_02 (0000000055FC3288)
+[LOG] SoundI::release                          :  (0000000052688088)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_03 (0000000055FC2588)
+[LOG] SoundI::release                          :  (00000000526881F8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_04 (0000000055FC2A68)
+[LOG] SoundI::release                          :  (0000000052687228)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_05 (0000000055FC35C8)
+[LOG] SoundI::release                          :  (0000000052688A98)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Birds_06 (0000000055FC0848)
+[LOG] SoundI::release                          : GGJ19_Ambiance_Outside_Traffic (0000000052BF87F8)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (0000000055FC1F08)
+[LOG] SoundI::release                          :     GGJ19_Ambiance_Outside_Traffic (0000000052BF7A78)
